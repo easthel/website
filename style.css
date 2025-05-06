@@ -1,0 +1,279 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-image: url(l.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background-color: teal;
+    border-radius: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(0, 128, 128, 0.467); 
+    color: black;
+    transition: 200ms;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button.primary {
+    background-color: rgba(0, 128, 128, 0.792);
+    color: #fff;
+    border-radius: 30px;
+}
+
+.button.primary:hover {
+    background-color: teal;
+}
+
+.button.secondary {
+    background-color: #eee;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.button.secondary:hover {
+    background-color: #ddd;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero h1 {
+    margin-right: 50px;
+    font-family: merienda;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.1em;
+    color: #484545;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 400px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section h2 {
+    font-family: merienda;
+    font-size: 2em;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    color: #333;
+}
+
+.services-grid {
+    display: inline-flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.service-item {
+    padding: 20px;
+    border: whitesmoke;
+    border-radius: 5px;
+}
+
+.service-item h3 {
+    margin-bottom: 10px;
+    color: teal;
+}
+
+.service-item p {
+    color: #666;
+}
+
+.bg-light {
+    background-color: #f8f8f8;
+}
+
+.about-content {
+    text-align: left;
+    padding-right: 40px;
+}
+
+.about-image {
+    max-width: 580px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.about-content, .about-image {
+    flex: 1;
+}
+
+.about-content, .about-image {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.contact-details {
+    text-decoration: none;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.contact-details ul {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+.contact-details li {
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.contact-details a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: #666;
+}
+
+footer {
+    background-color: rgba(0, 128, 128, 0.866);
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    padding: 30px ;
+    font-size: 0.9em;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: teal;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .hero-image {
+        max-width: 100%;
+    }
+
+    .about-content, .about-image {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .about-content {
+        margin-bottom: 30px;
+        text-align: left;
+    }
+}

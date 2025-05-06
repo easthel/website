@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooch Purrfect Pet Salon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Your pet's home away from home.</h1>
+                <p>Give your furry companions the care they deserve with our professional grooming services.</p>
+                <a href="login.html" class="button primary">Book an Appointment</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <div class="services-grid">
+                    <div class="service-item">
+                        <h3>Full & Basic Grooming</h3>
+                        <p>Comprehensive grooming services to ensure your pet looks and feels their best.</p>
+
+                    </div>
+                    <div class="service-item">
+                        <h3>Bath & Blowdry</h3>
+                        <p>Relaxing bath and blow-dry for a clean and refreshed pet.</p>
+
+                    </div>
+                    <div class="service-item">
+                        <h3>Haircut</h3>
+                        <p>Professional haircuts tailored to your pet's unique style and needs.</p>
+
+                    </div>
+                    <div class="service-item">
+                        <h3>Nail Trim</h3>
+                        <p>Safe and precise nail trimming for your pet's comfort and health.</p>
+
+                    </div>
+                    <div class="service-item">
+                        <h3>Ear Clean</h3>
+                        <p>Gentle ear cleaning to maintain your pet's hygiene and prevent infections.</p>
+
+                    </div>
+                    <div class="service-item">
+                        <h3>Teeth Brushing</h3>
+                        <p>Effective teeth brushing to promote your pet's oral health and fresh breath.</p>
+
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="about" class="section bg-light">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Pooch Purrfect is a pet grooming salon in Santo Tomas, Batangas, dedicated to providing personalized and high-quality grooming, bathing, haircuts, and nail care services for your beloved pets. To enhance convenience and customer satisfaction, we have developed an easy-to-use website that allows you to effortlessly book and manage appointments, maintain pet profiles, and receive real-time updates on grooming progress, streamlining our operations and ensuring a seamless experience for both pets and their owners.</p>
+        </div>
+        <div class="about-image">
+            <img src="pooch.jpg">
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-light">
+        <h2>Contact Us</h2>
+        <div class="contact-details">
+            <p>If you have any questions, contact us through the following:</p>
+            <ul>
+                <li><i class="number"></i> 0906 313 3468</li>
+                <li><i class="fas fa-envelope"></i>poochpurrfectpetsalon@gmail.com</li>
+                <li><a href="https://maps.app.goo.gl/n78V7WLvoaEmAWKP8">ATC Courtyard Maharlika Highway, Poblacion 2, Sto. Tomas City, Batangas</a>
+            </ul>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pooch Purrfect Pet Salon. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+    </footer>
+
+    <script>
+        // script.js
+// You can add JavaScript for interactive elements here
+
+// Example: Smooth scrolling for navigation links
+document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// You might add more interactive features like:
+// - Image carousels for the gallery
+// - Form submission handling for a contact form (if you add one)
+// - Dynamic content loading
+    </script>
+</body>
+</html>
